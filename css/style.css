@@ -1,0 +1,293 @@
+/*
+* Principais Classses
+*/
+body{
+    background-color: #f3f5f0;
+}
+.container-fluid{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+.row{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+/* Classes de letras*/ 
+h2{
+    font-weight: 800 ;
+    font-style: normal;
+    font-size: 45PX;
+    color: #27582b;
+}
+
+h3{
+    font-weight: 700 ;
+    font-style: normal;
+    font-size: 28px;
+}
+
+h4, P{
+    font-weight: 200 ;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.alinha-centro {
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    
+}
+
+.alinha-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*
+* Customização do navbar
+*/
+
+.bg-dark {
+    background-color: #fff !important;
+    color: #27582b !important;
+    padding: 0px;
+}
+
+.nav-link{
+    color: #27582b !important;
+    font-weight: 600;
+    padding: 0px;
+    margin: 0px 10px;
+}
+
+.nav-link:hover{
+    color: #08200a !important;
+    border-bottom: 2px solid #08200a ;
+    transition: .2s all;
+    transition-delay:0.2s;
+    cursor: pointer;
+}
+
+.navbar-toggler{
+    background-color: #27582b;
+    border:none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+/*
+* Customização nossos serviços
+*/
+
+.box-servico{
+padding: 10px 10px;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.116);
+margin: 20PX;
+}
+
+.box-servico:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.281);
+    cursor: pointer;
+}
+
+
+
+.servico{
+    
+    background-image: url(../img/servicos/serv-01.jpg);
+    background-size: cover;
+    padding: 10px;
+   
+    height: 500px;
+    margin: 10px;
+    color: white;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.servico h2{
+    color: #f49623;
+}
+
+.servico h4{
+    color: #f49623;
+    font-style: italic;
+}
+
+.servico::after{
+    content: '';
+    background-color: #252c3f;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.servico:hover{
+    opacity: .95;
+    cursor: pointer;
+    transition: .3s all;
+    transition-delay:0.3s;
+}
+
+.servico-section{
+    padding: 100px;
+}
+
+
+.serv-missao{    
+    padding: 20px 20px;
+    margin: 0px 3px;
+    box-shadow:  0px 1px 7px 0px rgba(0, 0, 0, 0.075);
+    border-bottom: 2px solid #f49623;
+}
+
+.serv-missao:hover{    
+    box-shadow:  0px 1px 7px 0px rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+}
+
+.serv-missao h3{ 
+    color: #27582b;
+    border-bottom: .5px solid #f49623;
+}
+
+
+.sobre-nos{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-nos-container{
+    background-color: #ffffff;
+    padding: 80px;
+}
+
+.contato-section{
+    background-color: #f3f5f0;
+    color: #f3f5f0 !important;
+    padding: 100px;
+    color: #08200a !important;
+    
+}
+
+#rodape{
+    padding: 20px;
+    background-color: #252c3f;
+    color: #f49623;
+}
+
+#rodape h3{
+font-size: 20px;
+}
+
+
+#rodape  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    }
+
+#rodape li{
+    margin: 5px 0px;
+    padding: 0px;
+}
+
+#rodape a{
+    text-decoration: none;
+    color: #f49623;
+}
+#rodape a:hover{
+    text-decoration: none;
+    color: #925305;
+}
+
+.d-reserv{
+    background-color: #252c3f;
+    color: #f49623;
+}
+
+/*
+* Criação de botões
+*/
+
+.btn-01{
+    background-color: #27582b;
+    color: #f3f5f0;
+    padding: 20px 40px;
+    border-radius: 0px;
+    text-align: center;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-01:hover{
+    background-color: #08200a;
+    transition: .2s all;
+    transition-delay:0.2s;
+    cursor: pointer;
+}
+
+.btn-02{
+    background-color: #f3f5f0;
+    color: #011830;
+    padding: 10px 10px;
+    border-radius: 0px;
+    text-align: center;
+    font-weight: 700;
+    border: none;
+    height: 50px;
+    width: 150px;
+}
+
+.btn-02:hover{
+    background-color: #27582b;
+    color: #f3f5f0;
+    height: 52px;
+    width: 152px;
+    border: 2px solid #27582b;
+    transition: .4s all;
+    transition-delay:0.4s;
+    cursor: pointer;
+}
+
+.btn-03{
+    background-color: #f49623;
+    color: #011830;
+    padding: 20px 20px;
+    margin: 20px 0px;
+    border-radius: 0px;
+    text-align: center;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-03:hover{
+    background-color: #27582b;
+    color: #f3f5f0;
+    border: none;
+    transition: .2s all;
+    transition-delay:0.2s;
+    cursor: pointer;
+    box-shadow:  0px 1px 7px 0px rgba(83, 250, 67, 0.699)
+}
